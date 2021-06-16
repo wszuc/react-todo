@@ -1,0 +1,18 @@
+$yellow: rgba(255, 255, 20, 0.719);
+
+$std-padding: 10px;
+$std-margin: 5px;
+$std-radius: 5px;
+$std-width: 200px;
+$std-height: 250px;
+
+.card {
+  background-color: $yellow;
+  padding: $std-padding;
+  border-radius: $std-radius;
+  margin: $std-margin;
+  width: $std-width;
+  height: $std-height;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,4 @@
+node_modules/
+src/arch/
+.parcel-cache/
+dist/

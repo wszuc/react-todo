@@ -1,0 +1,48 @@
+// I didn't use the 7-1 structure because it's too specific for such a small project
+
+@use './card';
+
+$std-padding: 5px;
+$std-margin: 20px;
+$std-radius: 3px;
+$ext-radius: 10px;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #8ec5fc;
+  background-image: -webkit-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-image: -moz-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-image: -o-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  justify-content: center;
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .inputs form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        margin-bottom: $std-margin;
+        padding: $std-padding;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    .panel {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
