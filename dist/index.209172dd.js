@@ -1223,7 +1223,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","react-dom":"2sg1U","./sass/style.scss":"2O5uT","./Card":"2IQyC","./Input":"5mmi1","./Filter":"3yNBA","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./DeleteAllDone":"5SGnM"}],"3b2NM":[function(require,module,exports) {
+},{"react":"3b2NM","react-dom":"2sg1U","./sass/style.scss":"2O5uT","./Card":"2IQyC","./Input":"5mmi1","./Filter":"3yNBA","./DeleteAllDone":"5SGnM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3b2NM":[function(require,module,exports) {
 "use strict";
 if ("development" === 'production') {
   module.exports = require('./cjs/react.production.min.js');
@@ -26437,9 +26437,39 @@ try {
       };
       this.handleDone = this.handleDone.bind(this);
     }
+    toggleDone() {
+      console.log(this.state.done);
+      if (this.state.done) {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement("i", {
+            onClick: this.handleDone,
+            className: "fas fa-check-circle done",
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15,
+              columnNumber: 9
+            }
+          })
+        );
+      } else {
+        return (
+          /*#__PURE__*/_reactDefault.default.createElement("i", {
+            onClick: this.handleDone,
+            className: "fas fa-check-circle",
+            __self: this,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 18,
+              columnNumber: 14
+            }
+          })
+        );
+      }
+    }
     handleDone(e) {
       this.setState({
-        done: e.target.value
+        done: !this.state.done
       });
       this.props.markAsDone(this.props.id);
     }
@@ -26450,7 +26480,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17,
+            lineNumber: 27,
             columnNumber: 7
           }
         }, /*#__PURE__*/_reactDefault.default.createElement("section", {
@@ -26458,7 +26488,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 18,
+            lineNumber: 28,
             columnNumber: 9
           }
         }, /*#__PURE__*/_reactDefault.default.createElement("i", {
@@ -26467,30 +26497,21 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 19,
+            lineNumber: 29,
             columnNumber: 11
           }
-        }), /*#__PURE__*/_reactDefault.default.createElement("i", {
-          onClick: this.handleDone,
-          className: "fas fa-check-circle",
+        }), this.toggleDone()), /*#__PURE__*/_reactDefault.default.createElement("h1", {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 20,
-            columnNumber: 11
-          }
-        })), /*#__PURE__*/_reactDefault.default.createElement("h1", {
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22,
+            lineNumber: 35,
             columnNumber: 9
           }
         }, this.props.title), /*#__PURE__*/_reactDefault.default.createElement("p", {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 23,
+            lineNumber: 36,
             columnNumber: 9
           }
         }, this.props.content))

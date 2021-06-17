@@ -15,4 +15,21 @@ $std-height: 250px;
   height: $std-height;
   overflow-y: auto;
   overflow-wrap: break-word;
+  .panel {
+    .fas:hover {
+      cursor: pointer;
+    }
+    [class*="fa-"] {
+      transition: color 0.2s;
+    }
+    .fa-trash:hover {
+      color: red;
+    }
+    .fa-check-circle:hover {
+      color: green;
+    }
+    .done {
+      color: green;
+    }
+  }
 }
