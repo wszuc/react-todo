@@ -13,7 +13,11 @@ export default class Filter extends React.Component {
     return (
       <div>
         <form>
-          <select value={this.state.value} onChange={this.handleChange}>
+          <select
+            className="filter"
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
             <option value="all">all</option>
             <option value="to do">to do</option>
             <option value="done">done</option>

@@ -26940,6 +26940,7 @@ try {
             columnNumber: 9
           }
         }, /*#__PURE__*/_reactDefault.default.createElement("select", {
+          className: "filter",
           value: this.state.value,
           onChange: this.handleChange,
           __self: this,
@@ -26953,7 +26954,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17,
+            lineNumber: 21,
             columnNumber: 13
           }
         }, "all"), /*#__PURE__*/_reactDefault.default.createElement("option", {
@@ -26961,7 +26962,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 18,
+            lineNumber: 22,
             columnNumber: 13
           }
         }, "to do"), /*#__PURE__*/_reactDefault.default.createElement("option", {
@@ -26969,7 +26970,7 @@ try {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 19,
+            lineNumber: 23,
             columnNumber: 13
           }
         }, "done"))))

@@ -1,7 +1,8 @@
 .card {
-  background-color: rgba(255, 255, 20, 0.719);
+  background-color: transparent;
   padding: 10px;
   border-radius: 5px;
+  border: solid white thin;
   margin: 5px;
   width: 200px;
   height: 250px;
@@ -29,11 +30,8 @@ body {
   margin: 0;
   padding: 0;
   background-attachment: fixed;
-  background-color: #8bc6ec;
-  background-image: -webkit-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  background-image: -moz-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  background-image: -o-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-color: #2c2c2c;
+  color: white;
 }
 
 .container {
@@ -51,10 +49,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
+  border-radius: 3px;
 }
 .container .controls .inputs form input {
   margin-bottom: 20px;
   padding: 5px;
+  border-radius: 10px;
+  border: white thin solid;
+  background-color: transparent;
+  color: inherit;
+}
+.container .controls .filter {
+  background-color: transparent;
+  border-radius: 10px;
+  border: white thin solid;
+  color: inherit;
 }
 .container .cards {
   display: flex;

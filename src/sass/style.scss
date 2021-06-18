@@ -12,11 +12,12 @@ body {
   margin: 0;
   padding: 0;
   background-attachment: fixed;
-  background-color: #8bc6ec;
-  background-image: -webkit-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  background-image: -moz-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  background-image: -o-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-color: rgb(44, 44, 44);
+  color: white;
+  // background-image: -webkit-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  // background-image: -moz-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  // background-image: -o-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  // background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 }
 
 .container {
@@ -32,10 +33,22 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: $std-padding;
+      border-radius: $std-radius;
       input {
         margin-bottom: $std-margin;
         padding: $std-padding;
+        border-radius: $ext-radius;
+        border: white thin solid;
+        background-color: transparent;
+        color: inherit;
       }
+    }
+    .filter {
+      background-color: transparent;
+      border-radius: 10px;
+      border: white thin solid;
+      color: inherit;
     }
   }
   .cards {

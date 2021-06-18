@@ -7,9 +7,10 @@ $std-width: 200px;
 $std-height: 250px;
 
 .card {
-  background-color: $yellow;
+  background-color: transparent;
   padding: $std-padding;
   border-radius: $std-radius;
+  border: solid white thin;
   margin: $std-margin;
   width: $std-width;
   height: $std-height;
