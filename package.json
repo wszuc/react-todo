@@ -2,11 +2,11 @@
   "name": "react-playground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "jest",
-    "start": "parcel serve ./src/index.html --no-cache",
-    "build": "parcel build ./src/App.js -d dist"
+    "start": "parcel serve src/index.html --no-cache",
+    "build": "parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
