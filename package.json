@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "parcel serve ./src/index.html --no-cache",
-    "build": "parcel build ./src/App.js"
+    "build": "parcel build ./src/App.js -d dist"
   },
   "author": "",
   "license": "ISC",
